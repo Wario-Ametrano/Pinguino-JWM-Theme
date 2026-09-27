@@ -1,0 +1,31 @@
+[confirm]
+quit = false
+
+[opener]
+xfwrite = [
+    { run = 'xfwrite %s', orphan = true, desc = "Xfwrite" }
+]
+kate = [
+    { run = 'kate %s', orphan = true, desc = "Kate" }
+]
+codium = [
+    { run = 'codium %s', orphan = true, desc = "VSCodium" }
+]
+micro = [
+    { run = '''sh -c 'echo -ne "\e[5 q" && micro "$@" && echo -ne "\e[5 q"' -- %s''', block = true, desc = "Micro" }
+]
+xfimage = [
+    { run = 'xfimage %s', orphan = true, desc = "Xfimage" }
+]
+gimp = [
+    { run = 'gimp %s', orphan = true, desc = "Gimp" }
+]
+
+[open]
+rules = [
+    { mime = "text/*", use = [ "micro", "kate", "codium", "xfwrite" ] },
+    { mime = "image/*", use = [ "xfimage", "gimp" ] }
+]
+
+[mgr]
+ratio = [2, 4, 3]
