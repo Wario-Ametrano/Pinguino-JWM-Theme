@@ -1,0 +1,52 @@
+! Wario Cyberpunk 
+xterm*background: #000000
+xterm*foreground: #FF0055
+xterm*cursorColor: #00FFC8
+
+! Colori ANSI Standard (0-7)
+xterm*color0:  #1f1f1f
+xterm*color1:  #FF0055
+xterm*color2:  #00c469
+xterm*color3:  #F4EF00
+xterm*color4:  #6766B3
+xterm*color5:  #D57BFF
+xterm*color6:  #0DCDCD
+xterm*color7:  #EEFFFF
+
+! Colori BRIGHT (8-15)
+xterm*color8:  #777777
+xterm*color9:  #FF4081
+xterm*color10: #00FF9C
+xterm*color11: #FFFC58
+xterm*color12: #76C1FF
+xterm*color13: #C592FF
+xterm*color14: #00FFC8
+xterm*color15: #FFFFFF
+
+!IMPOSTAZIONI FUNZIONALITA-----------------------------
+
+! IMPOSTAZIONI CURSORE
+xterm*cursorBlink: always
+XTerm*blinkInterval: 500
+XTerm*cursorShape: bar
+XTerm*cursorThickness: 1
+xterm*pointerShape: left_ptr
+xterm*scrollBar: false
+xterm*saveLines: 2000
+
+! Impostazioni Font e Rendering
+xterm*faceName: JetBrainsMono NL Nerd Font:style=Regular
+xterm*faceNameBold: JetBrainsMono Nerd Font:style=Bold
+xterm*faceSize: 12
+xterm*geometry: 70x20
+xterm*renderFont: true
+
+! Codifica e Localizzazione
+xterm*utf8: 1
+xterm*locale: true
+
+! Supporto Grafico Sixel
+xterm*decTerminalID: vt340
+
+Xcursor.theme: Notwaita-Black
+Xcursor.size: 25
