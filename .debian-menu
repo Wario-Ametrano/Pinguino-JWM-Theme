@@ -12,6 +12,7 @@
 	<Menu label="󰨜 Media">
         	<Program label="󰕼 Vlc">vlc</Program>
  	  		<Program label=" Audacity">audacity</Program>
+ 	  		<Program label="󱀞 Alsamixer">xterm -e alsamixer</Program>
  	      	<Program label=" Pulse Audio">pavucontrol-qt</Program>
 	</Menu>
 	
@@ -22,9 +23,9 @@
 	</Menu>
 
         <Menu label=" Internet">
-            	<Program label="󰆌 Midori">midori</Program>
-           		<Program label="󱞟 Min">min</Program>   
-            	<Program label=" Telegram">telegram-desktop</Program>   
+        	<Program label="󱇽 Min Browser">min</Program>
+            <Program label="󰬔 Midori">midori</Program>   
+            <Program label=" Telegram">telegram-desktop</Program>   
 	    	<Program label=" Whatsdesk">whatsdesk</Program>   
         </Menu>
 
@@ -45,6 +46,8 @@
             	<Program label=" Xfe (Root)">pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY xfe</Program>
 				<Program label="󰇥 Yazi">xterm -e yazi</Program>
 				<Program label="󰆍 XTerm">xterm</Program>
+				<Program label=" LXTerminal">lxterminal</Program>
+				<Program label=" Alacritty">alacritty</Program>
 				<Program label="󰄛 Kitty">kitty</Program>
 
         </Menu>
@@ -53,7 +56,8 @@
   		<Menu label="󱥚 Preferenze">   
  			<Program label="󰢵 LxAppearance">lxappearance</Program>
    			<Program label=" Kvantum">kvantummanager</Program>
-   			<Program label=" Qt6ct Settings">qt6ct</Program>
+   			<Program label=" Qt6ct Settings">qt6ct</Program>   
+   			<Program label=" Xterm Config">xterm -e micro .Xresources</Program>
    			<Program label="󰄛 Kitty Themes">kitty -e kitten themes</Program>
 		</Menu>	
    		 <Program label="󰚰 Lubuntu Updates">lubuntu-update</Program>
