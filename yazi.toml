@@ -24,8 +24,9 @@ gimp = [
     { run = 'gimp %s', orphan = true, desc = "Gimp" }
 ]
 extract = [
-	{ run = 'aunpack "$@"', desc = "Estrai archivio", for = "unix" },
+    { run = 'aunpack %s; echo; echo "Fatto, premi Invio"; read x', block = true, desc = "Estrai archivio", for = "unix" },
 ]
+
 [open]
 rules = [
     { mime = "text/*", use = [ "micro", "kate", "codium", "xfwrite" ] },
