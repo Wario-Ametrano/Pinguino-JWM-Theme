@@ -14,6 +14,9 @@ codium = [
 micro = [
     { run ='printf "\033[5 q"; micro %s', block = true, desc = "Micro"}
 ]
+atril = [
+	 { run = 'atril %s', orphan = true, desc = "Atril" }
+]
 feh = [
     { run = 'feh %s', orphan = true, desc = "Feh" }
 ]
@@ -26,11 +29,19 @@ gimp = [
 extract = [
     { run = 'aunpack %s; echo; echo "Fatto, premi Invio"; read x', block = true, desc = "Estrai archivio", for = "unix" },
 ]
+terminal = [
+	    { run = '''lxterminal -e bash -c 'cd "$(dirname "$0")"; read -e -i "\"$0\"" -p "$ " c; eval "$c"; exec bash' %s''', orphan = true, desc = "Terminal" },
+]
 
 [open]
 rules = [
     { mime = "text/*", use = [ "micro", "kate", "codium", "xfwrite" ] },
     { mime = "image/*", use = [ "feh","xfimage", "gimp" ] },
+    
+   	{ url = "*.cbr", use = [ "atril" ] },
+    { url = "*.cbz", use = [ "atril" ] },   
+    
+	{ mime = "*", use = [ "terminal" ] },
 	
 	{ mime = "application/x-tar", use = [ "extract" ] },
 	{ mime = "application/x-bzip2", use = [ "extract" ] },
